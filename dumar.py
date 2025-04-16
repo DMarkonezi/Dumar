@@ -1,6 +1,6 @@
 import os
 
-from html.parser import HTMLParser
+#from html.parser import HTMLParser#
 import yt_dlp
 
 # For reading the CLIENT_ID and CLIENT_SECRET from .env file on local machine
@@ -39,3 +39,4 @@ if __name__ == "__main__":
 
     playlists = sp.current_user_playlists()
     print("Playlists:", playlists)
+    print("RADI ")
