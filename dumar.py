@@ -28,8 +28,8 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(
     scope="user-library-read playlist-modify-public"
 ))
 
-if __name__ == "__main__":
-
+#
+def extract_playlist_from_yt_url_to_spotify(URL):
     ydl_opts = {
         'quiet': True,
         'extract_flat': True # Gets only the metadata (titles, duration...) and doesn't download them
@@ -78,6 +78,7 @@ if __name__ == "__main__":
         else:
             print("There is no such track on spotify!")
 
+    return
 
 
 
